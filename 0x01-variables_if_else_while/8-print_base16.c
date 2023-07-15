@@ -13,8 +13,8 @@ int main(void)
 		putchar(digit);
 		if (digit == 57)
 			digit += 39;
-			digit++;
+		digit++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
