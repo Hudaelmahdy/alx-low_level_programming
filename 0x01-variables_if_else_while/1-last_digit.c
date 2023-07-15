@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - print string in the if function
- * Description: using the main function
- * this is false or true validation
+ * main - entry point
+ * Description: print the value of n status:
+ *              greater than, is zero and is not less than 6.
  * Return: 0
 */
 
@@ -15,6 +15,7 @@ int main(void)
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
 		digit = n % 10;
+
 		if (digit > 5)
 		printf("last digit of %i is %i and is greater than 5\n", n, digit);
 		else if (digit == 0)
