@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_number - print 0 - 9 only using _putchar twice
+ * print_numbers - print 0 - 9 only using _putchar twice
  * Return: always 0 (success)
 */
 
-void print_number(void)
+void print_numbers(void)
 {
 	int num = 0;
 
