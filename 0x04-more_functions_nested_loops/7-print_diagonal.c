@@ -20,5 +20,5 @@ for (i = 1; i < n; i++)
 	_putchar('92'); /*is equal to '/' char*/
 	_putchar('\n');
 }
-
+}
 }
