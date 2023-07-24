@@ -6,12 +6,15 @@
  *@str: string.
  * Return: Always 0.
  */
-void print_rev(char *str);
-int main(void)
+void print_rev(char *str)
 {
-		char *str;
+		int i = 0;
 
-		str = "Dolly";
-		print_rev(str);
-		return (0);
+		while (s[i])
+			i++;
+		while (i--)
+		{
+			_putchar(s[i]);
+		}
+		_putchar('\n');
 }
