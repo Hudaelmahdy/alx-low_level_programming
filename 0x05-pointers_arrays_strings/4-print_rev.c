@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *@str: string.
+ *print_rev - prints reversed string followed by a new line
+ *@s: string.
  * Return: Always 0.
  */
 void print_rev(char *s)
