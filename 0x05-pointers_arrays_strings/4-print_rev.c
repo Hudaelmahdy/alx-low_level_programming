@@ -6,7 +6,7 @@
  *@str: string.
  * Return: Always 0.
  */
-void print_rev(char *str)
+void print_rev(char *s)
 {
 		int i = 0;
 
