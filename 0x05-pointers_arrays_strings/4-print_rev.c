@@ -3,10 +3,10 @@
 
 /**
  * main - check the code
- *
+ *@str: string.
  * Return: Always 0.
  */
-void print_rev(char *s);
+void print_rev(char *str);
 int main(void)
 {
 		char *str;
