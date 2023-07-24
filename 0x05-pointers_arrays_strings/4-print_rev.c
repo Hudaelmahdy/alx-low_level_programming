@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include"main.h"
 
 /**
@@ -20,8 +19,8 @@ void print_rev(char *s)
 		s--;
 		for (h = i; h > 0; h++)
 		{
-			putchar(*s);
+			_putchar(*s);
 			s--;
 		}
-		putchar('\n');
+		_putchar('\n');
 }
