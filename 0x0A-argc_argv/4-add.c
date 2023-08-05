@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * main - it all starts here
+ * main - prints the addition of positive numbers.
  * @argc: the number of arguments
  * @argv: array of pointer to arguments
- * Return always 0.
+ * Return: always 0.
 */
 
 int main(int argc, char *argv[])
