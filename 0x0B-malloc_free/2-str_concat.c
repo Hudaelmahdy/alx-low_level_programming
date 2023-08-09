@@ -1,7 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
-/***
- * _strlen - find length of string
+#include <stdio.h>
+
+/**
+ *_strlen - function to find length of string
  * @s: string
  * Return: int
 */
@@ -39,7 +41,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	bi = _strlen(s1);
 	ci = _strlen(s2);
-	m = malloc((bi + ci) *sizeof(char) +1);
+	m = malloc((bi + ci) * sizeof(char) + 1);
 
 	if (m == 0)
 	{
