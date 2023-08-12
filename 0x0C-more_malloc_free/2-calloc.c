@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _memset - fills memory with a constant byte
@@ -12,13 +11,13 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *ptr = s;
+	unsigned int i;
 
-	while (n--)
+	for (i = 0; i < n; i++)
 	{
-		*s++ = b;
+		s[i] = b;
 	}
-	return (ptr);
+	return (s);
 }
 
 /**
@@ -30,17 +29,17 @@ char *_memset(char *s, char b, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *m;
+	char *ptr;
 
 	if (size == 0 || nmemb == 0)
 	{
 		return (NULL);
 	}
-	m = malloc(sizeof(int) * nmemb);
-	if (m == 0)
+	ptr = malloc(size * nmemb);
+	if (ptr == 0)
 	{
 		return (NULL);
 	}
-	_memset(m, 0, sizeof(int) * nmemb);
-	return (m);
+	_memset(ptr, 0, size * nmemb);
+	return (ptr);
 }
