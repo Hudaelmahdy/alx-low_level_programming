@@ -8,25 +8,29 @@
  * @n: The number of strings passed to the function.
  * @...: A variable number of strings to be printed.
  *
- * Return: void
+ * Description: If separator is NULL, it is not printed.
+ *              If one of the strings if NULL, (nil) is printed instead.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list ap;
+	va_list strings;
 	char *str;
-	int i = n;
+	unsigned int index;
 
-if (!n)
-{
+	va_start(strings, n);
+	for (index = 0; index < n; index++)
+	{
+		str = va_arg(strings, char *);
+
+		if (str == NULL)
+			printf("(nil)");
+		else
+			printf("%s", str);
+
+		if (index != (n - 1) && separator != NULL)
+			printf("%s", separator);
+	}
+
 	printf("\n");
-	return (0);
-}
-va_start(ap, n);
-
-while (i--)
-{
-	printf("%s%s", (str = va_arg(ap, char *)) ? str : "(nil)",
-	i ? (separator ? separator : "") : "\n");
-}
-va_end(ap);
+	va_end(strings);
 }
